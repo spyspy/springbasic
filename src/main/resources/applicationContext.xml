@@ -4,8 +4,9 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <context:component-scan base-package="com.springclass.basic.component"></context:component-scan>
+
+    <!--AUTO SCAN : is ths for @Component?? -->
+    <context:component-scan base-package="com.springclass.basic" />
 
     <!--Define a bean in XML config file-->
     <bean id = "GoodService" class = "com.springclass.basic.service.GoodServiceImpl">

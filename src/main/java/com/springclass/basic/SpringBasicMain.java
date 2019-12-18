@@ -4,6 +4,8 @@ import com.springclass.basic.component.CoachInterface;
 import com.springclass.basic.service.GoodService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+//This is not Spring Boot!!!!!  Just normal Spring
+
 public class SpringBasicMain {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -13,8 +15,12 @@ public class SpringBasicMain {
         wow.getNewInfo();
 
         //
-        CoachInterface coachInterface = context.getBean("tennisCoach", CoachInterface.class);
-        coachInterface.getDailyPractice();
+        CoachInterface coach1 = context.getBean("tennisCoach", CoachInterface.class);
+        coach1.getDailyPractice();
+
+        CoachInterface coach2 = context.getBean("baseBaby", CoachInterface.class);
+        coach2.getDailyPractice();
+
 
         context.close();
     }
