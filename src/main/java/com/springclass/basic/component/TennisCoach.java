@@ -18,7 +18,13 @@ public class TennisCoach implements CoachInterface{
         fortuneService = thefortuneService;
     }
 
+    @Override
     public void getDailyPractice() {
         System.out.println("TennisCoach: getDailyPractice()");
+    }
+
+    @Override
+    public void getDailyFortune() {
+        fortuneService.getFortune();
     }
 }

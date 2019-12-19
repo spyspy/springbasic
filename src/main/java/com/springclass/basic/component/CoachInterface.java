@@ -1,5 +1,6 @@
 package com.springclass.basic.component;
 
 public interface CoachInterface {
-    void getDailyPractice();
+    public void getDailyPractice();
+    public void getDailyFortune();
 }

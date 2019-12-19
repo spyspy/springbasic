@@ -21,6 +21,7 @@ public class SpringBasicMainEntryPoint {
 
         CoachInterface coach2 = context.getBean("baseBaby", CoachInterface.class);
         coach2.getDailyPractice();
+        coach2.getDailyFortune();
 
 
         context.close();

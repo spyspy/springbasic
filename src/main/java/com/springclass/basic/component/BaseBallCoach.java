@@ -10,4 +10,9 @@ public class BaseBallCoach implements CoachInterface {
     public void getDailyPractice() {
         System.out.println("BaseBallCoach: getDailyPractice()");
     }
+
+    @Override
+    public void getDailyFortune() {
+
+    }
 }
