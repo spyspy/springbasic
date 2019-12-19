@@ -6,8 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 //This is not Spring Boot!!!!!  Just normal Spring
 
-public class SpringBasicMain {
+public class SpringBasicMainEntryPoint {
     public static void main(String[] args) {
+
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         //

@@ -12,6 +12,7 @@ public class TennisCoach implements CoachInterface{
 
     private FortuneService fortuneService;
 
+    //Injection !!
     @Autowired
     public TennisCoach(FortuneService thefortuneService){
         fortuneService = thefortuneService;

@@ -5,9 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!--NEW WAY to define Bean-->
     <!--AUTO SCAN : is ths for @Component?? -->
     <context:component-scan base-package="com.springclass.basic" />
 
+    <!--OLD WAY to define Bean-->
     <!--Define a bean in XML config file-->
     <bean id = "GoodService" class = "com.springclass.basic.service.GoodServiceImpl">
     </bean>
